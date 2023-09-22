@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blockchain App</title>
+</head>
+<body>
+    <h1>Blockchain App</h1>
+    <form method="POST" action="/upload">
+        <label for="file_path">File Path:</label>
+        <input type="text" id="file_path" name="file_path">
+        <input type="submit" value="Upload">
+    </form>
+    <form method="POST" action="/download">
+        <label for="block_index">Block Index:</label>
+        <input type="text" id="block_index" name="block_index">
+        <label for="file_name">File Name:</label>
+        <input type="text" id="file_name" name="file_name">
+        <input type="submit" value="Download">
+    </form>
+    <a href="/view">View Blockchain</a>
+</body>
+</html>

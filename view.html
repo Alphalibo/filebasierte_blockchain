@@ -1,0 +1,26 @@
+<!-- view.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blockchain View</title>
+</head>
+<body>
+    <h1>Blockchain View</h1>
+    <ul>
+        {% for block in blockchain %}
+        <li>
+            Block {{ block.index }}:<br>
+            Transactions: {{ block.transactions }}<br>
+            Previous Hash: {{ block.prev_hash }}<br>
+            Hash: {{ block.hash }}<br>
+        </li>
+        {% endfor %}
+    </ul>
+    <h2>Files in Blockchain:</h2>
+    <ul>
+        {% for file in files %}
+        <li>{{ file }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
